@@ -27,11 +27,21 @@ environment:
 # dependencies can be manually updated by changing the version numbers below to
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
+
+
 dependencies:
+     # You can find the latest version on pub.dev    # For accessing device location
+  #flutter_map_marker_cluster:  # For clustering markers (optional)
+  #location:
+  #flutter_map_location:
+  flutter_map_marker_popup:
+  latlong2:
+  url_launcher: ^6.0.5
+  flutter_map:
   flutter:
     sdk: flutter
-    assets:
-      - assets/images/lake.jpg
+
+
   camera:
     git:
       url: https://github.com/bottlepay/plugins.git
@@ -44,6 +54,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   path_provider: ^2.1.1
   path: ^1.8.2
+
 
 dev_dependencies:
   flutter_test:
@@ -61,6 +72,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

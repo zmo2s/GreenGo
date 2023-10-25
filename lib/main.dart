@@ -1,6 +1,9 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:plant/pictureList.dart';
 import 'package:plant/take_picture.dart';
+
+import 'bottom_navigation_bar.dart';
 
 
 
@@ -16,11 +19,11 @@ class SecondPage extends StatelessWidget {
     // In the First Page
     ElevatedButton(
       onPressed: () {
-        Navigator.pushNamed(context, '/second'); // Navigate to the second page
+        Navigator.pushNamed(context, '/fourth'); // Navigate to the second page
       },
       child: Text('Go to Second Page'),
     )
-  ])
+  ]),
 
       ),
     );
@@ -50,7 +53,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/', // Define the initial route
       routes: {
         '/': (context) => SecondPage(), // Define the first page as the initial route
-        '/second': (context) => TakePictureScreen(camera: firstCamera1), // Define the second page route
+        '/second': (context) => TakePictureScreen(camera: firstCamera1),
+        '/third': (context) => PictureList(),// Define the second page route
+        '/fourth': (context) => BottomNavigationBarExampleApp()
       },
     );
   }
