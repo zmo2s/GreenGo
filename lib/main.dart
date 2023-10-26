@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:plant/login.dart';
 import 'package:plant/pictureList.dart';
 import 'package:plant/take_picture.dart';
 
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/', // Define the initial route
       routes: {
-        '/': (context) => SecondPage(), // Define the first page as the initial route
+        '/': (context) => LoginPage(), // Define the first page as the initial route
         '/second': (context) => TakePictureScreen(camera: firstCamera1),
         '/third': (context) => PictureList(),// Define the second page route
         '/fourth': (context) => BottomNavigationBarExampleApp()

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant/login.dart';
 import 'package:plant/pictureList.dart';
 
 import 'map.dart';
@@ -35,10 +36,7 @@ class _BottomNavigationBarExampleState
   static  List<Widget> _widgetOptions = <Widget>[
 
     MapWidget(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    LoginPage()
   ];
 
   void _onItemTapped(int index) {
